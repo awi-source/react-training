@@ -29,14 +29,19 @@ class Column extends React.Component {
   render(){
     return (
       <section className={styles.component}>
-        <h3 className={styles.title}>{this.props.title}<span className={styles.icon}><Icon name={this.props.icon}/></span></h3>
+        <h3 className={styles.title}>
+          {this.props.title}
+          <span className={styles.icon}>
+            <Icon name={this.props.icon}/>
+            </span>
+        </h3>
         {this.state.cards.map(({key, ...cardsProps}) => (
       <Card key={key} {...cardsProps} />
     ))}
-    <div className={styles.creator}>
+      <div className={styles.creator}>
         <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
       </div>
-      </section>
+    </section>
     )
     }
 }
