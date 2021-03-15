@@ -27,7 +27,7 @@ class Column extends React.Component {
         ));
       }
   render(){
-    return (
+    return ( 
       <section className={styles.component}>
         <h3 className={styles.title}>
           {this.props.title}

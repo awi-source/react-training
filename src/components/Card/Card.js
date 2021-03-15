@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 class Card extends React.Component {
   constructor(props){
     super(props);
-  this.state = {
-    added: false
-  }
+      this.state = {
+        added: false
+      }
   this.addStar = this.addStar.bind(this);
   }
   addStar(){

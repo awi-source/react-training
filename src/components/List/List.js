@@ -3,13 +3,15 @@ import styles from './List.scss';
 import Hero from '../Hero/Hero.js';
 import Column from '../Column/Column.js';
 import PropTypes from 'prop-types';
-import {settings} from '../../data/dataStore';
+import {settings, quotes} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
-import Creator from '../Creator/Creator.js';
+import Creator from '../Creator/Creator.js';;
+import Motivation from '../Motivation/Motivation.js';
 
 class List extends React.Component {
   state = {
     columns: this.props.columns || [],
+    
   }
   static propTypes = {
     title: PropTypes.node.isRequired,
@@ -52,6 +54,7 @@ class List extends React.Component {
       <div className={styles.creator}>
         <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/>
       </div>
+      <Motivation {...quotes}/>
       </section>
     )
   }
