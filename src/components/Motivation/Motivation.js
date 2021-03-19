@@ -4,22 +4,26 @@ import { quotes } from '../../data/dataStore';
 
 class Motivation extends React.Component{
     state = {
-        quote: '',
+        selectedQuote: null,
     }
-    static propTypes = {
-        quotes: propTypes.array,
-        // quote: propTypes.string,
+
+    stateRandomQuote = () => {
+        const randomQuote = Math.floor(Math.random() * quotes.length);
+        console.log(randomQuote);
+        this.setState(state => (
+            {
+            selectedQuote: quotes[randomQuote],
+            
+            }
+        ));
     }
-    quoteHandler(){
-        this.setState(quote => (
-        quotes: quotes,
-        ))}
+    
 render(){
-    const randomQuote = Math.floor(Math.random() * quotes.length);
+    
     return(
         <div className={styles.component}>
-            <button onClick={this.quoteHandler} className={styles.btn}>Check today's message:</button>
-            <p>{this.state.quotes[randomQuote]}</p>
+            <button onClick={this.stateRandomQuote} className={styles.btn}>Check today's message:</button>
+            <p>{this.state.selectedQuote}</p>
         </div>
     )
     }
