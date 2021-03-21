@@ -6,6 +6,9 @@ class Card extends React.Component {
         state = {
           added: false,
         } 
+        static propTypes = {
+          title: PropTypes.string,
+        }
 
   addStar = () => {
     this.setState(prevState => ({

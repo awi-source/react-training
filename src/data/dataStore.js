@@ -80,5 +80,5 @@ export const quotes = [
   '“If you work on something a little bit every day, you end up with something that is massive.” – Kenneth Goldsmith',
   '“Nothing will work unless you do.” – Maya Angelou',
   '“Don’t quit yet, the worst moments are usually followed by the most beautiful silver linings. You have to stay strong, remember to keep your head up and remain hopeful.” – Unknown',
-  '“In the middle of every difficulty lies opportunity.” – Albert Einstein'
+  '“In the middle of every difficulty lies opportunity.” – Albert Einstein',
 ];

@@ -10,19 +10,17 @@ class Motivation extends React.Component{
     stateRandomQuote = () => {
       const randomQuote = Math.floor(Math.random() * quotes.length);
       console.log(randomQuote);
-      this.setState(state => (
-        {
-          selectedQuote: quotes[randomQuote],
-            
-        }
-      ));
+      this.setState ({
+      
+        selectedQuote: quotes[randomQuote],
+      });
     }
-    
     render(){
     
       return(
         <div className={styles.component}>
-          <button onClick={this.stateRandomQuote} className={styles.btn}>Check today's message:</button>
+          <button onClick={this.stateRandomQuote} className={styles.btn}>Check today&apos;s message:</button>
+          
           <p>{this.state.selectedQuote}</p>
         </div>
       );
