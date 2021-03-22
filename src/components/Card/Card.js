@@ -22,11 +22,12 @@ class Card extends React.Component {
   render() {
     const star = <i className="far fa-star"></i>;
     const addedStar = <i className="fas fa-star"></i>;
+    const {title} = this.props;
     return (
       
 
       <div className={styles.component}>
-        <p>{this.props.title}
+        <p>{title}
           <button onClick={this.addStar} className={styles.star}>{this.state.added ? addedStar : star}
           </button>
         </p>
