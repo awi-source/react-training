@@ -43,7 +43,6 @@ class Creator extends React.Component {
   }
 
   render() {
-    console.log(this.props.action);
     return (
       <div className={styles.component}>
         <input

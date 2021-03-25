@@ -9,7 +9,6 @@ class Motivation extends React.Component{
 
     stateRandomQuote = () => {
       const randomQuote = Math.floor(Math.random() * quotes.length);
-      console.log(randomQuote);
       this.setState ({
       
         selectedQuote: quotes[randomQuote],
