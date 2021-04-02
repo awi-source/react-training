@@ -7,6 +7,7 @@ import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator.js';
 import Motivation from '../Motivation/Motivation.js';
+import Container from '../Container/Container.js';
 
 class List extends React.Component {
 
@@ -26,23 +27,26 @@ class List extends React.Component {
   render() {
     const {title, image, description, columns, addColumn} = this.props;
     return (
-      <section className={styles.component}>
-        <Hero titleText={title} imgSrc={image}  />
-        <div className={styles.description}>
-          {ReactHtmlParser(description)}
-        </div>
+      <Container>
+        <section className={styles.component}>
+          <Hero titleText={title} imgSrc={image}  />
+          <div className={styles.description}>
+            {ReactHtmlParser(description)}
+          </div>
         
-        <div className={styles.columns}>
-          {columns.map(columnData => (
-            <Column key={columnData.id} {...columnData} />
-          ))}
-        </div>
-        <div className={styles.creator}>
-          <Creator text={settings.columnCreatorText} action={addColumn}/>
-        </div>
+          <div className={styles.columns}>
+            {columns.map(columnData => (
+              <Column key={columnData.id} {...columnData} />
+            ))}
+          </div>
+          <div className={styles.creator}>
+            <Creator text={settings.columnCreatorText} action={addColumn}/>
+          </div>
         
-        <Motivation />
-      </section>
+          <Motivation />
+        </section>
+      </Container>
+        
     );
   }
 }
