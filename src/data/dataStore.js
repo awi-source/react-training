@@ -12,6 +12,32 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+
+  header:{
+    icon: 'carrot',
+  },
+  FAQ:{
+    title: 'FAQ',
+    image: 'https://i.postimg.cc/fTbcr4ZX/scrabble-4957948-640.jpg',
+    question:
+      'Q: Etiam in velit at ex tempus rutrum?',
+    answer: 'A: Aenean viverra tempor consectetur. Nullam quis auctor ligula. Nulla faucibusimperdiet mauris at facilisis. Sed convallis dictum risus eget faucibus.Nunc luctus rhoncus orci, nec porta magna condimentum et. Nam malesuada luctus nisi. Aenean porta finibus dictum. Cras augue libero, laoreet sit amet accumsan ac, semper sed tortor.',
+    questions: [
+      'Q: Etiam in velit at ex tempus rutrum?',
+      'Q: In non velit id felis vestibulum condimentum?', 
+      'Q: Cras in massa et mauris pretium hendrerit?', 
+    ],
+    answers:  [
+      'A: uis ultricies tellus quis nulla facilisis, vel laoreet orci condimentum. Maecenas ullamcorper commodo ex in blandit. Sed pulvinar tellus nec nisi placerat, et dignissim tortor feugiat.', 
+      'A: Aenean viverra tempor consectetur. Nullam quis auctor ligula. Nulla faucibusimperdiet mauris at facilisis. Sed convallis dictum risus eget faucibus.',
+      'A: Nunc luctus rhoncus orci, nec porta magna condimentum et. Nam malesuada luctus nisi. Aenean porta finibus dictum. Cras augue libero, laoreet sit amet accumsan ac, semper sed tortor.',
+    ],
+  },
+  info:{
+    title: 'Info',
+    image: 'https://i.postimg.cc/B6qLPDnD/lightbulb-2692247-640.jpg',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  },
 };
 
 export const pageContents = {
