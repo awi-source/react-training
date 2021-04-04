@@ -1,12 +1,13 @@
 import React from 'react';
 import Container from '../Container/Container';
 import Hero from '../Hero/Hero.js';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+import { listData } from '../../data/dataStore';
 
 
-const FAQ = props => (
+const FAQ = () => (
   <Container>
-    <Hero titleText={props.title} imgSrc={props.image} /> 
+    <Hero titleText={listData.title} imgSrc={listData.image} /> 
     <h2>Q: Etiam in velit at ex tempus rutrum?</h2>
     <p>A: uis ultricies tellus quis nulla facilisis, vel laoreet orci condimentum. Maecenas ullamcorper commodo ex in blandit. Sed pulvinar tellus nec nisi placerat, et dignissim tortor feugiat.</p>
     <h2>Q: In non velit id felis vestibulum condimentum?</h2>
@@ -16,8 +17,9 @@ const FAQ = props => (
   </Container>
 );
 
-FAQ.propTypes = {
-  title: PropTypes.node.isRequired,
-  image: PropTypes.string,
-};
+// FAQ.propTypes = {
+//   title: PropTypes.node.isRequired,
+//   image: PropTypes.string,
+ 
+// };
 export default FAQ;
