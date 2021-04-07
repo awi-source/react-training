@@ -119,6 +119,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'books',
+    title: 'Books to read',
+    description: 'Valuable books worth reading',
+    image: 'https://i.postimg.cc/43M8XgD8/books-1204029-1920.jpg',
+  },
+  {
+    id: 'travel',
+    title: 'Places to visit',
+    description: '10 places I will visit this year ',
+    image: 'https://i.postimg.cc/vZ0fdtJX/sunrise-1014712-1920.jpg',
+  },
 ];
 
 const columns = [
@@ -140,12 +152,12 @@ const columns = [
     title: 'Games',
     icon: 'gamepad',
   },
-  {
-    id: 'column-4',
-    listId: 'list-2',
-    title: 'Strange column',
-    icon: 'question',
-  },
+  // {
+//     id: 'column-4',
+//     listId: 'list-2',
+//     title: 'Strange column',
+//     icon: 'question',
+//   },
 ];
 
 const cards = [

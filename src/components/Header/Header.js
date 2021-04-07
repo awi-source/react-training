@@ -4,12 +4,14 @@ import Container from '../Container/Container';
 import styles from './Header.scss';
 import Icon from '../Icon/Icon.js';
 import { settings } from '../../data/dataStore';
+import Search from '../Search/Search.js';
 
 class Header extends React.Component {
   render(){
     return ( 
       <header className={styles.component}>
         <Container>
+         
           <div className={styles.wrapper}>
             <Link to='/' className={styles.logo}>
               <Icon name={settings.header.icon} />
@@ -19,7 +21,8 @@ class Header extends React.Component {
               <NavLink exact to='/info'activeClassName='active'>Info</NavLink>
               <NavLink exact to='/FAQ'activeClassName='active'>FAQ</NavLink>
             </nav>
-          </div>
+          </div> 
+          <Search />
         </Container>
       </header>
     );
