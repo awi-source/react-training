@@ -5,7 +5,7 @@ export const getCardsForColumn = ({cards}, columnId ) => cards.filter(card => ca
 // && 
 //  new RegExp(searchString, 'i').test(card.title));
 export const getMatchingCards = ({cards, searchString}) => cards.filter(card => 
-  new RegExp(searchString, 'i').test(card.title));
+  card.title.toLowerCase().includes(searchString.toLowerCase()));
 
 // action name creator
 const reducerName = 'cards';

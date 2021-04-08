@@ -18,11 +18,11 @@ class SearchResults extends React.Component {
   //   icon: settings.defaultColumnIcon,
   // }
   render(){
-    const {title, cards, addCard} = this.props;
+    const { cards, addCard} = this.props;
     return ( 
       <section className={styles.component}>
         <h3 className={styles.title}>
-          {title}
+         Search Results:
           {/* <span className={styles.icon}>
             <Icon name={icon}/>
           </span> */}
